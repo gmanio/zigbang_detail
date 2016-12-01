@@ -1,0 +1,66 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-btn_realdata {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 222px;
+  height: 122px;
+}
+.icon-ic_back {
+  background-image: url(sprite.png);
+  background-position: -40px -175px;
+  width: 43px;
+  height: 35px;
+}
+.icon-ic_cert_people {
+  background-image: url(sprite.png);
+  background-position: 0px -122px;
+  width: 178px;
+  height: 53px;
+}
+.icon-ic_daum_map {
+  background-image: url(sprite.png);
+  background-position: -83px -175px;
+  width: 36px;
+  height: 35px;
+}
+.icon-ic_daum_road {
+  background-image: url(sprite.png);
+  background-position: -222px -42px;
+  width: 31px;
+  height: 43px;
+}
+.icon-ic_help_black_24dp {
+  background-image: url(sprite.png);
+  background-position: 0px -175px;
+  width: 40px;
+  height: 40px;
+}
+.icon-ic_like {
+  background-image: url(sprite.png);
+  background-position: -178px -122px;
+  width: 42px;
+  height: 40px;
+}
+.icon-ic_share {
+  background-image: url(sprite.png);
+  background-position: -222px 0px;
+  width: 35px;
+  height: 42px;
+}

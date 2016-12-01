@@ -1,0 +1,17 @@
+{
+  "name": "zigbang_detail",
+  "version": "0.0.1",
+  "description": "simple sprite page",
+  "scripts": {
+    "sprite": "gulp sprite",
+    "build": "gulp build"
+  },
+  "author": "GmanPark",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp.spritesmith": "^6.2.1"
+  }
+}
