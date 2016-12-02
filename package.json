@@ -4,8 +4,7 @@
   "description": "simple sprite page",
   "scripts": {
     "dev": "lite-server",
-    "sprite": "gulp sprite",
-    "build": "gulp build"
+    "sprite": "gulp sprite"
   },
   "author": "GmanPark",
   "license": "MIT",

@@ -1,33 +1,12 @@
 <!doctype html>
-<html amp lang="en">
+<html lang="en">
 <head>
     <title>zigbang :: detail</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no">
     <link rel="stylesheet" href="./css/style.css">
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <!--<script src="vendor/platform.min.js"></script>-->
-    <script id="buildingList" type="application/json">
-        {
-            "datas": [
-                {
-                    "building": {
-                        "id": "18304",
-                        "img": "https://zigbang.s3-ap-northeast-1.amazonaws.com/public/buildings/18304.jpg",
-                        "name": "고려 아카데미 텔",
-                        "address1": "서울시",
-                        "address2": "마포구 아현동",
-                        "address3": "437-3",
-                        "floor": "17층",
-                        "rooms": "356세대",
-                        "established": "1987.11"
-                    }
-                }
-            ]
-        }
-    </script>
-    <script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=f2dc1bac4738f37ff5d783ab52a512b5"></script>
+    <script src="vendor/polymer.min.js"></script>
+    <script src="http://apis.daum.net/maps/maps3.js?apikey=f2dc1bac4738f37ff5d783ab52a512b5"></script>
 </head>
 <body>
 <div id="wrap">
@@ -47,10 +26,18 @@
         <div class="content">
             <div class="wrap_slider">
                 <ul class="room_image">
-                    <li><img src="./img/pic/room1.png" width="100%" height="100%" alt="room_img"></li>
-                    <!--<li></li>-->
-                    <!--<li></li>-->
-                    <!--<li></li>-->
+                    <li class="slide show">
+                        <div class="cover" style="background-image:url('./img/pic/room1.png');"></div>
+                    </li>
+                    <li class="slide">
+                        <div class="cover" style="background-image:url('./img/pic/room2.png');"></div>
+                    </li>
+                    <li class="slide">
+                        <div class="cover" style="background-image:url('./img/pic/room3.png');"></div>
+                    </li>
+                    <li class="slide">
+                        <div class="cover" style="background-image:url('./img/pic/room4.png');"></div>
+                    </li>
                 </ul>
             </div>
             <div class="notice">
@@ -134,7 +121,7 @@
                         <template repeat="{{items}}">
                             <div class="building_info">
                                 <div class="room_img">
-                                    <img src="https://zigbang.s3-ap-northeast-1.amazonaws.com/public/buildings/18304.jpg" width="100%" height="100%">
+                                    <img src="{{img}}" width="100%" height="100%">
                                 </div>
                                 <div class="room_desc">
                                     <span>
@@ -168,7 +155,7 @@
                                     <span class="icon-profile"></span>
                                 </div>
                                 <div class="txt">
-                                    <span>대표공인중개사 (이갑영)</span>
+                                    <span><b>대표공인중개사 (이갑영)</b></span>
                                     <span>okok@naver.com</span>
                                     <span>010-1234-4567</span>
                                 </div>
@@ -206,6 +193,25 @@
         </div>
     </div>
 </div>
+<script id="buildingList" type="application/json">
+    {
+        "datas": [
+            {
+                "building": {
+                    "id": "18304",
+                    "img": "https://zigbang.s3-ap-northeast-1.amazonaws.com/public/buildings/18304.jpg",
+                    "name": "고려 아카데미 텔",
+                    "address1": "서울시",
+                    "address2": "마포구 아현동",
+                    "address3": "437-3",
+                    "floor": "17층",
+                    "rooms": "356세대",
+                    "established": "1987.11"
+                }
+            }
+        ]
+    }
+</script>
 <script src="./js/zigbang_detail.js"></script>
 <script>
     window.onload = function () {
