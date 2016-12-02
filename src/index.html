@@ -4,11 +4,11 @@
     <title>zigbang :: detail</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="./sprite/sprite.css">
     <link rel="stylesheet" href="./css/style.css">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script id="item" type="application/json">
+    <!--<script src="vendor/platform.min.js"></script>-->
+    <script id="buildingList" type="application/json">
         {
             "datas": [
                 {
@@ -27,23 +27,182 @@
             ]
         }
     </script>
+    <script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=f2dc1bac4738f37ff5d783ab52a512b5"></script>
 </head>
 <body>
 <div id="wrap">
-    <div class="content">
-        <header>
-            <div class="nav">
+    <div class="header">
+        <div class="nav">
+            <div class="l_menu">
                 <a href="#"><span class="icon-ic_back"></span></a>
-                <a href="#"><span>서울시 강남구 신사동</span></a>
+            </div>
+            <div class="tit"><span>서울시 강남구 신사동</span></div>
+            <div class="r_menu">
                 <a href="#"><span class="icon-ic_share"></span></a>
                 <a href="#"><span class="icon-ic_like"></span></a>
             </div>
-        </header>
-        <div>
-            <img src="#" width="720" height="720" alt="room_img">
         </div>
-        <div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="wrap_slider">
+                <ul class="room_image">
+                    <li><img src="./img/pic/room1.png" width="100%" height="100%" alt="room_img"></li>
+                    <!--<li></li>-->
+                    <!--<li></li>-->
+                    <!--<li></li>-->
+                </ul>
+            </div>
+            <div class="notice">
+                <span class="icon-ic_cert_people"></span>
+                <span>안심중개사가 등록한 방입니다.</span>
+                <span class="icon-ic_help_black"></span>
+            </div>
+            <div class="detail">
+                <div class="wrap_card">
+                    <h3>신사동 예쁜 쓰리룸</h3>
+                    <div class="card">
+                        <a href="#" class="wrap_ic_realdata">
+                            <span class="icon-btn_realdata"></span>
+                        </a>
+                        <dl>
+                            <dt>보증금</dt>
+                            <dd><strong>10000</strong>만원</dd>
+                            <dt>월세</dt>
+                            <dd><strong>100</strong>만원</dd>
+                            <dt class="sep">등록번호</dt>
+                            <dd class="sep">1234567</dd>
+                            <dt>주소</dt>
+                            <dd>서울시 강남구 신사동</dd>
+                            <dt>인근전철역</dt>
+                            <dd>신사역(3호선) 압구정역 (7호선)</dd>
+                            <dt>층/건물층수</dt>
+                            <dd>3층/4층</dd>
+                            <dt>크기</dt>
+                            <dd>전용먼적 60.10m2 18.18P</dd>
+                            <dt>구조</dt>
+                            <dd>쓰리룸+</dd>
+                            <dt class="sep">건물형태</dt>
+                            <dd class="sep">다세대/다가구</dd>
+                            <dt>옵션</dt>
+                            <dd>옷장</dd>
+                            <dt>관리비</dt>
+                            <dd>없음</dd>
+                            <dt>관리비 포함항목</dt>
+                            <dd>수도</dd>
+                            <dt>주차</dt>
+                            <dd>불가능</dd>
+                            <dt>엘레베이터</dt>
+                            <dd>없음</dd>
+                            <dt>입주가능일</dt>
+                            <dd>4월 21일 이후</dd>
+                        </dl>
+                    </div>
+                </div>
 
+                <div class="wrap_card">
+                    <h3>상세설명</h3>
+                    <div class="card">
+                        <div class="txt_area">
+                            <span>거실과 방이 크게 나온 신사동 3룸 입니다 ^^</span>
+                            <br>
+                            <span>남향집이고 해가 너무 잘들고 근처 건물둘에 비해서 집이 깨끗하고 뷰도 좋은 편입니다.</span>
+                            <br>
+                            <span>가격은 집주인 분과 상의 후에 조정 가능합니다!!</span>
+                            <br>
+                            <span>깔끔하고 좋은 집 보러 연락주세요!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_card">
+                    <h3>담당자 한마디</h3>
+                    <div class="card">
+                        <div class="txt_area">
+                            <span>공휴일 및 주말에도 언제든지 상담 가능</span>
+                            <br>
+                            <span>차량 픽업 서비스 가능</span>
+                            <br>
+                            <span>조건에 맞는 집 답사</span>
+                            <br>
+                            <span>상담부터 계약까지 고객 맞춤형 서비스</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_card">
+                    <h3>건물정보</h3>
+                    <div class="card">
+                        <template repeat="{{items}}">
+                            <div class="building_info">
+                                <div class="room_img">
+                                    <img src="https://zigbang.s3-ap-northeast-1.amazonaws.com/public/buildings/18304.jpg" width="100%" height="100%">
+                                </div>
+                                <div class="room_desc">
+                                    <span>
+                                        <em>{{name}}</em>
+                                    </span>
+                                    <span class="sep">{{address1}} {{address2}} {{address3}}</span>
+                                    <span>{{floor}}</span>
+                                    <span>{{rooms}}</span>
+                                    <span>{{established}}</span>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="wrap_card">
+                    <h3>위치보기</h3>
+                    <div class="card">
+                        <div id="map" class="map"></div>
+                        <div class="btn_layer">
+                            <a href="http://map.daum.net/link/map/37.5513138,126.9539775"><span class="icon-ic_daum_map"></span>지도보기</a>
+                            <a href="http://map.daum.net/link/roadview/37.5513138,126.9539775"><span class="icon-ic_daum_road"></span>로드뷰보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_card">
+                    <h3>중개사정보</h3>
+                    <div class="card">
+                        <div class="people">
+                            <div class="info">
+                                <div class="pic">
+                                    <span class="icon-profile"></span>
+                                </div>
+                                <div class="txt">
+                                    <span>대표공인중개사 (이갑영)</span>
+                                    <span>okok@naver.com</span>
+                                    <span>010-1234-4567</span>
+                                </div>
+                            </div>
+                            <p>중개사무소 정보</p>
+                            <ul>
+                                <li>
+                                    <span>서울시 마포구, 테리 부동산 (김테리)</span>
+                                </li>
+                                <li>
+                                    <span>대표번호 : 1588-1688</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="law_notify">
+                    <span>이 방은 <b>공인중개사가 등록한 중개 매물</b>입니다.</span>
+                    <span>공인중개사를 통해 <b>안전하게 계약</b>할 수 있으며, <b>법정 중개 보수가 발생</b>합니다.</span>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="info">
+                    <div class="company">우정공인중개사(김성훈)</div>
+                    <div class="assistant">중개보조원(한유진팀장)</div>
+                    <div class="number">010-5228-7285<b> 중개 </b></div>
+                </div>
+                <div class="call">
+                    <a id="call_retailer" data-number="010-5228-7285" href="tel:010-5228-7285" class="btn_call">
+                        <span class="icon-ic_call_black"></span>
+                        <span class="txt">문의하기</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -18,49 +18,61 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-btn_realdata {
   background-image: url(sprite.png);
-  background-position: 0px 0px;
+  background-position: -207px 0px;
   width: 222px;
   height: 122px;
 }
 .icon-ic_back {
   background-image: url(sprite.png);
-  background-position: -40px -175px;
+  background-position: -92px -207px;
   width: 43px;
   height: 35px;
 }
+.icon-ic_call_black {
+  background-image: url(sprite.png);
+  background-position: -36px -252px;
+  width: 36px;
+  height: 36px;
+}
 .icon-ic_cert_people {
   background-image: url(sprite.png);
-  background-position: 0px -122px;
+  background-position: -207px -127px;
   width: 178px;
   height: 53px;
 }
 .icon-ic_daum_map {
   background-image: url(sprite.png);
-  background-position: -83px -175px;
+  background-position: -140px -207px;
   width: 36px;
   height: 35px;
 }
 .icon-ic_daum_road {
   background-image: url(sprite.png);
-  background-position: -222px -42px;
+  background-position: 0px -252px;
   width: 31px;
   height: 43px;
 }
-.icon-ic_help_black_24dp {
+.icon-ic_help_black {
   background-image: url(sprite.png);
-  background-position: 0px -175px;
+  background-position: -47px -207px;
   width: 40px;
   height: 40px;
 }
 .icon-ic_like {
   background-image: url(sprite.png);
-  background-position: -178px -122px;
+  background-position: 0px -207px;
   width: 42px;
   height: 40px;
 }
 .icon-ic_share {
   background-image: url(sprite.png);
-  background-position: -222px 0px;
+  background-position: -390px -127px;
   width: 35px;
   height: 42px;
+}
+.icon-profile {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 202px;
+  height: 202px;
 }
