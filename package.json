@@ -4,7 +4,8 @@
   "description": "simple sprite page",
   "scripts": {
     "dev": "lite-server",
-    "sprite": "gulp sprite"
+    "sprite": "gulp sprite",
+    "build": "gulp build"
   },
   "author": "GmanPark",
   "license": "MIT",
@@ -12,6 +13,9 @@
     "gulp": "^3.9.1"
   },
   "devDependencies": {
+    "gulp-bundle-assets": "^2.27.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-copy": "^1.0.0",
     "gulp-image-resize": "^0.10.0",
     "gulp.spritesmith": "^6.2.1",
     "lite-server": "^2.2.2"
